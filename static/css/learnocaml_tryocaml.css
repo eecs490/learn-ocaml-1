@@ -28,7 +28,7 @@
 }
 .toplevel-pane > div.toplevel-input::after {
   position: absolute;
-  background: transparent;
+  /*background: transparent;*/
   content:"";
   margin: 0;
   display: block;
@@ -37,7 +37,11 @@
   font-size: 18px;
   line-height: 18px;
   font-family: 'Inconsolata', monospace;
-  content: "#";
+  content: "";
+  height: 1em;
+  width: 0;
+  background: blue;
+  font-weight: bold;
 }
 .toplevel-pane > div.toplevel-input.disabled::after {
   transition: background 0.2s 0.5s;
@@ -63,6 +67,9 @@
   resize: none;
   min-height: 18px;
   display: block;
+}
+.toplevel-pane > div.toplevel-input > textarea:focus {
+  outline: 0;
 }
 .toplevel-pane > div.toplevel-input:not(.disabled):hover {
   background: #c0d8ff;
@@ -90,7 +97,8 @@
 }
 .toplevel-pane pre.toplevel-code {
   background: #666;
-  border-left-color: #444;
+  /*border-left-color: #444;*/
+  border-left-color: blue;
 }
 .toplevel-pane pre.toplevel-error {
   background: #800;
