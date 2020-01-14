@@ -212,7 +212,12 @@ let () =
   in
   begin toolbar_button
       ~icon: "typecheck" [%i"Compile"] @@ fun () ->
-    typecheck true
+      begin
+        let editor = Some (Ace.get_contents ace) in
+        token >>= fun token ->
+        sync_exercise token id ?editor >>= fun _save ->
+        typecheck true
+      end
   end;
   begin toolbar_button
           ~icon: "reload" [%i"Grade!"] @@ fun () ->
