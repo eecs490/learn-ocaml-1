@@ -63,7 +63,7 @@ VOLUME ["/sync"]
 EXPOSE 8080
 EXPOSE 8443
 
-USER learn-ocaml
+#USER learn-ocaml
 WORKDIR /home/learn-ocaml
 
 ARG opam_switch="/home/opam/.opam/4.12"
