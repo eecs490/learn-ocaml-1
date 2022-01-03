@@ -1,5 +1,18 @@
 # Changelog
 
+### [0.13.2](https://www.github.com/ocaml-sf/learn-ocaml/compare/v0.13.1...v0.13.2) (2022-01-03)
+
+
+### Bug Fixes
+
+* **docker:** Add missing libs for partition-view/… using compiler-libs ([#459](https://www.github.com/ocaml-sf/learn-ocaml/issues/459)) ([c2399b0](https://www.github.com/ocaml-sf/learn-ocaml/commit/c2399b0e40e08e9605ccce3d7fa151fbd930ea8a)), closes [#438](https://www.github.com/ocaml-sf/learn-ocaml/issues/438)
+* **grader:** Workaround issue [#457](https://www.github.com/ocaml-sf/learn-ocaml/issues/457) about the `Introspection` module ([#461](https://www.github.com/ocaml-sf/learn-ocaml/issues/461)) ([f5d66c6](https://www.github.com/ocaml-sf/learn-ocaml/commit/f5d66c678bf970f37bf71b54ac9104e4c877b08d))
+
+
+### Documentation
+
+* Add `CONTRIBUTING.md` file ([#452](https://www.github.com/ocaml-sf/learn-ocaml/issues/452)) ([6e3fa0f](https://www.github.com/ocaml-sf/learn-ocaml/commit/6e3fa0f8731a383f70006abf127bbf3c8a6218ee))
+
 ### [0.13.1](https://www.github.com/ocaml-sf/learn-ocaml/compare/v0.13.0...v0.13.1) (2021-10-16)
 
 
