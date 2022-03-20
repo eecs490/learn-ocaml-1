@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "learn-ocaml-client"
-version: "0.13.2"
+version: "0.14.0"
 authors: [
   "Benjamin Canou (OCamlPro)"
   "Çağdaş Bozman (OCamlPro)"
@@ -8,7 +8,10 @@ authors: [
   "Louis Gesbert (OCamlPro)"
   "Pierrick Couderc (OCamlPro)"
 ]
-maintainer: "Yann Régis-Gianas"
+maintainer: [
+  "Érik Martin-Dorel <erik.martin-dorel@irit.fr>"
+  "Yann Régis-Gianas <yann.regis-gianas@nomadic-labs.com>"
+]
 license: "MIT"
 homepage: "https://github.com/ocaml-sf/learn-ocaml"
 bug-reports: "https://github.com/ocaml-sf/learn-ocaml/issues"
@@ -25,11 +28,12 @@ depends: [
   "dune" {>= "2.3.0"}
   "ezjsonm"
   "gg"
-  "ipaddr" {= "2.8.0" }
+  "ipaddr" {= "2.9.0" }
   "lwt" {>= "4.0.0"}
   "lwt_ssl"
   "ocaml" {(>= "4.12") & (< "4.13~")}
   "ocamlfind" {build}
+  "ocaml-migrate-parsetree" {= "1.8.0"}
   "ocp-indent-nlfork"
   "ocplib-json-typed" {>= "0.7"}
   "ocp-ocamlres" {>= "0.4"}
@@ -38,7 +42,7 @@ depends: [
   "ppxlib"
   "ppx_sexp_conv"
   "ppx_tools"
-  "ssl" {= "0.5.5"}
+  "ssl" {= "0.5.10"}
   "vg"
 ]
 build: [
