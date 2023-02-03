@@ -216,7 +216,7 @@ let () =
       begin
         let editor = Some (Ace.get_contents ace) in
         token >>= fun token ->
-        sync_exercise token id ?editor >>= fun _save ->
+        sync_exercise token id ?editor (fun _ -> ()) >>= fun _save ->
         typecheck true
       end
   end;
